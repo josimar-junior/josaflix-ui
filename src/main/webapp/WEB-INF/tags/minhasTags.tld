@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="iso-8859-1" ?> 
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" 
+" http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib> 
+     <tlibversion>1.0</tlibversion> 
+     <jspversion>1.1</jspversion> 
+     <shortname>MinhasTags</shortname> 
+     <info>Minhas Tag's Customizadas</info>
+     
+     <tag> 
+          <name>listar</name> 
+          <tagclass>com.pos.tags.ListarTag</tagclass>           
+          <bodycontent>empty</bodycontent>
+     </tag>
+     
+     <tag>
+     	  <name>salvar</name>
+     	  <tagclass>com.pos.tags.SalvarTag</tagclass>
+     	  <bodycontent>empty</bodycontent>
+     	  
+     	  <attribute>
+     		<name>id</name>
+     		<required>false</required>
+     		<rtexprvalue>true</rtexprvalue>
+     	</attribute>
+     	  
+     	  <attribute>
+     	  		<name>titulo</name>
+     	  		<required>true</required>
+     	  		<rtexprvalue>true</rtexprvalue>
+     	  </attribute>
+     	  
+     	   <attribute>
+     	  		<name>genero</name>
+     	  		<required>true</required>
+     	  		<rtexprvalue>true</rtexprvalue>
+     	  </attribute>
+     	  
+     	   <attribute>
+     	  		<name>ano</name>
+     	  		<required>true</required>
+     	  		<rtexprvalue>true</rtexprvalue>
+     	  </attribute>
+     </tag>
+     
+     <tag>
+     	<name>deletar</name>
+     	<tagclass>com.pos.tags.DeletarTag</tagclass>
+     	<bodycontent>empty</bodycontent>
+     	
+     	<attribute>
+     		<name>id</name>
+     		<required>true</required>
+     		<rtexprvalue>true</rtexprvalue>
+     	</attribute>
+     </tag>
+     
+      <tag>
+     	<name>buscarPorId</name>
+     	<tagclass>com.pos.tags.BuscarPorIdTag</tagclass>
+     	<bodycontent>empty</bodycontent>
+     	
+     	<attribute>
+     		<name>id</name>
+     		<required>true</required>
+     		<rtexprvalue>true</rtexprvalue>
+     	</attribute>
+     </tag>
+     
+</taglib>
